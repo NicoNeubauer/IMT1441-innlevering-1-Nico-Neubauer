@@ -1,0 +1,17 @@
+[
+    {
+      "html": "Forside",
+      "id": "start-side",
+      "scriptsrc": ""
+    },
+    {
+      "html": "Drivstoff Omregning",
+      "id": "drivstoff",
+      "scriptsrc": "js/regneStykke.js"
+    },
+    {
+      "html": "JSON data",
+      "id": "klisteSection",
+      "scriptsrc": "js/jsonData.js"
+    }
+  ]

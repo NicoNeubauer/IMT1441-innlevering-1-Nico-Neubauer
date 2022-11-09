@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Velkommen</title>
+  <link rel="stylesheet" href="css/oppgave1CSS.css"> <!--CSS slikt at den er litt finere å se på--> 
+</head>
+<body>
+    <header>Innlevering 1</header>
+    <nav>
+        <ul>
+        </ul>
+    </nav>
+    <section>
+        <section id="start-side" class="active">
+            <!--Dette er "Start siden" og informasjonen som befinnder seg på den--> 
+            <h2>Velkommen til mitt prosjekt 1</h2>
+            <p>
+                Dette prosjektet er en “Single Page Application” ,dvs at alt skjer uten å forlate 
+                index.html. Koden er basert på det som har blitt gjennomgått på IMT1441 frem til nå.
+            </p>
+            <p>
+                På siden “Klasselister” så vil det bli presentert en klasseliste for alle som 
+                følger emnet IMT1441. Informasjon om studentene lastes inn fra en JSON fil.
+            </p>
+            <p>
+                På siden “Drivstofforbruk” så kan du beregne hvor mye drivstoff en bruker pr. mil. 
+                Det beregnes også en gjennomsnittsforbruk dersom en legger inn data fra flere fyllinger 
+                av drivstoff.
+             </p>
+        </section>
+        <section id="drivstoff">
+            <!--Denne delen er til drivstoff regnestykket. Ting har id at det er lett og adressere de i java skript filen--> 
+            <h2>Drivstoff kalkulator</h2>    
+                <div>
+                        <form onsubmit="javascript: return false">
+                            <label for="inputKM">Kjørte km</label>
+                                <input type="text" id=inputKM> <br>
+                            <label for="inputLI">Fylt drivstoff (liter)</label>
+                                <input type="text" id=inputLI> <br>
+                        
+                        <button id=button1>Begregn forbruk</button> <br>
+                        <p id=outputText></p>
+                        <textarea rows="6" cols="50" id=outputTextA></textarea>
+                        </form>
+                </div>
+            </section>
+        <section id="klisteSection"> <h2>Klasseliste for IMT1441</h2><!--hit legger jeg listen med studenter i emnet-->
+            <table id="table1" ><th>First Name</th> <th>Last Name</th> <th>Email</th> <th>Studie Program</th> </table> 
+        </section>
+        <script src="js/menu.js"></script> 
+        <!--main js Den er nederst siden jeg trenger at DOMen er satt på plass før den gjør ting-->
+    </section>
+</body>
